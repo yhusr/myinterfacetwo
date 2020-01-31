@@ -32,6 +32,7 @@ class TestRegister(unittest.TestCase):
         res = self.hr.send(url=url, data=data)
         try:
             self.assertListEqual([case.expected, case.msg], [res.json()['code'], res.json()['msg']], msg=f'用例{case.title}执行完成')
+            self.obj_li.write_excel(int(case.caseId) + 1, 8, value=str(res.json()))
         except AssertionError as e:
             my_logger.error(f'用例{case.title}断言失败')
             self.obj_li.write_excel(int(case.caseId)+1,7, value='fail')
@@ -39,6 +40,4 @@ class TestRegister(unittest.TestCase):
         else:
             my_logger.info(f'用例{case.title}断言成功')
             self.obj_li.write_excel(int(case.caseId)+1,7, value='success')
-        finally:
-            self.obj_li.write_excel(int(case.caseId)+1,8, value=str(res.json()))
 
