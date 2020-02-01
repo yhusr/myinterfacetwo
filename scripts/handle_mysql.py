@@ -54,5 +54,5 @@ class HandleMysql:
         self.connect.close()
 
 if __name__ == '__main__':
-    print(HandleMysql.random_telephone())
-    print(HandleMysql().no_exsit_phone_mysql())
+    phone_sql = hy.read_yaml('phone', 'phone_sql')
+    print(HandleMysql().get_mysql_result(phone_sql, '15816298405'))

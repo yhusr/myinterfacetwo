@@ -1,5 +1,5 @@
 """
-Time:2020/1/31 0031
+Time:2020/2/1 0001
 """
 import unittest
 from libs.ddt import ddt, data
@@ -12,8 +12,8 @@ from scripts.handle_log import my_logger
 
 
 @ddt
-class TestRegister(unittest.TestCase):
-    obj_li = HandleExcel('register')
+class TestLogin(unittest.TestCase):
+    obj_li = HandleExcel('login')
     cases = obj_li.read_excel()
 
     @classmethod
@@ -33,13 +33,13 @@ class TestRegister(unittest.TestCase):
         data = HandleRe.handle_para(case.data)
         res = self.hr.send(url=url, data=data)
         try:
-            self.assertListEqual([case.expected, case.msg], [res.json()['code'], res.json()['msg']], msg=f'用例{case.title}执行完成')
+            self.assertListEqual([case.expected, case.msg], [res.json()['code'], res.json()['msg']],
+                                 msg=f'用例{case.title}执行完成')
             self.obj_li.write_excel(int(case.caseId) + 1, 8, value=str(res.json()))
         except AssertionError as e:
             my_logger.error(f'用例{case.title}断言失败')
-            self.obj_li.write_excel(int(case.caseId)+1,7, value='fail')
+            self.obj_li.write_excel(int(case.caseId) + 1, 7, value='fail')
             raise e
         else:
             my_logger.info(f'用例{case.title}断言成功')
-            self.obj_li.write_excel(int(case.caseId)+1,7, value='success')
-
+            self.obj_li.write_excel(int(case.caseId) + 1, 7, value='success')

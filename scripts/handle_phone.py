@@ -21,8 +21,16 @@ class HandlePhone:
                  "type": type,
                  "reg_name": username}
         res = hr.send(url=url,data=datas)
+
         if res.json()['code'] == 0:
-            phone_data = {username: datas}
+            id = res.json()['data']['id']
+            phone_data = {username:
+                              {"mobile_phone": phone,
+                               "pwd": password,
+                               "type": type,
+                               "id": id,
+                               "reg_name": username}
+                          }
             hm.close()
             hr.close()
             return phone_data
