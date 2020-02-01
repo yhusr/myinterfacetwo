@@ -1,0 +1,8 @@
+2020-02-01 21:09:46,797 - my_interface_test - [test_01_register.py-->line:39] - INFO: 用例正确格式的数据注册成功断言成功
+2020-02-01 21:09:48,045 - my_interface_test - [test_01_register.py-->line:39] - INFO: 用例密码为空断言成功
+2020-02-01 21:09:49,184 - my_interface_test - [test_01_register.py-->line:39] - INFO: 用例密码少于8位断言成功
+2020-02-01 21:09:50,307 - my_interface_test - [test_01_register.py-->line:39] - INFO: 用例密码大于16位断言成功
+2020-02-01 21:09:51,056 - my_interface_test - [test_01_register.py-->line:39] - INFO: 用例手机号为空断言成功
+2020-02-01 21:09:51,820 - my_interface_test - [test_01_register.py-->line:39] - INFO: 用例手机号密码均为空断言成功
+2020-02-01 21:09:52,569 - my_interface_test - [test_01_register.py-->line:39] - INFO: 用例手机号输入为空格断言成功
+2020-02-01 21:09:53,115 - my_interface_test - [test_01_register.py-->line:35] - ERROR: 用例手机号和密码均输入为空格断言失败
