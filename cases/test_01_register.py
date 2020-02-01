@@ -1,39 +1,35 @@
 """
 Time:2020/1/31 0031
 """
-import unittest
-from libs.ddt import ddt, data
+import pytest
 from scripts.handle_excel import HandleExcel
-from scripts.handle_request import HandleRequests
 from scripts.handle_conf import hy
-from scripts.handle_mysql import HandleMysql
 from scripts.handle_re import HandleRe
 from scripts.handle_log import my_logger
 
 
-@ddt
-class TestRegister(unittest.TestCase):
+@pytest.mark.usefixtures('set_up')
+class TestRegister:
     obj_li = HandleExcel('register')
     cases = obj_li.read_excel()
 
-    @classmethod
-    def setUpClass(cls) -> None:
-        cls.hr = HandleRequests()
-        cls.hm = HandleMysql()
-        cls.hr.common_heads({hy.read_yaml('request', 'request_head'): hy.read_yaml('request', 'request_value')})
-
-    @classmethod
-    def tearDownClass(cls) -> None:
-        cls.hr.close()
-        cls.hm.close()
-
-    @data(*cases)
-    def test_register(self, case):
+    # @classmethod
+    # def setUpClass(cls) -> None:
+    #     cls.hr = HandleRequests()
+    #     cls.hm = HandleMysql()
+    #     cls.hr.common_heads({hy.read_yaml('request', 'request_head'): hy.read_yaml('request', 'request_value')})
+    #
+    # @classmethod
+    # def tearDownClass(cls) -> None:
+    #     cls.hr.close()
+    #     cls.hm.close()
+    @pytest.mark.parametrize('case', cases)
+    def test_register(self, set_up, case):
         url = hy.read_yaml('request', 'base_url') + case.url
         data = HandleRe.handle_para(case.data)
-        res = self.hr.send(url=url, data=data)
+        res = set_up[0].send(url=url, data=data)
         try:
-            self.assertListEqual([case.expected, case.msg], [res.json()['code'], res.json()['msg']], msg=f'用例{case.title}执行完成')
+            assert [case.expected, case.msg] == [res.json()['code'], res.json()['msg']]
             self.obj_li.write_excel(int(case.caseId) + 1, 8, value=str(res.json()))
         except AssertionError as e:
             my_logger.error(f'用例{case.title}断言失败')

@@ -21,7 +21,7 @@ PHONE_PATH = os.path.join(config_file, 'phone_num.yaml')
 
 # log所在目录
 strtime = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
-logs_file_path = os.path.join(root_path, 'logs')
+logs_file_path = os.path.join(root_path, 'log')
 LOG_PATH = os.path.join(logs_file_path, 'log' + strtime + '.log')
 
 # case所在目录

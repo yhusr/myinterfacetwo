@@ -27,9 +27,9 @@ class HandleLog:
         mylogger.addHandler(sh)
 
         # 日志文件输出
-        fh = logging.FileHandler(self.filepath, encoding='utf8')
-        fh.setFormatter(my_format)
+        fh = logging.FileHandler(self.filepath)
         fh.setLevel(hy.read_yaml('log', 'level'))
+        fh.setFormatter(format_log)
         mylogger.addHandler(fh)
 
         return mylogger
