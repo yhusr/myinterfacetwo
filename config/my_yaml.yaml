@@ -8,6 +8,8 @@ mysql:
   port: 3306
   db: futureloan
   charset: 'utf8'
+  id_sql: select max(id) as maxId from member
+  loan_amount_sql: select sum(amount) as amount from loan where member_id=%s
 
 phone:
   pre: '158'
