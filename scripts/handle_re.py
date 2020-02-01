@@ -32,4 +32,14 @@ class HandleRe:
         if re.search(r'{no_exist_num}', data):
             re_data = re.sub(r'{no_exist_num}', str(hm.get_mysql_result(hy.read_yaml('mysql', 'id_sql'))['maxId']+1), data)
             return re_data
+        if re.search(r'{admin_phone}', data):
+            re_data = re.sub(r'{admin_phone}', hl.read_yaml('admin', 'mobile_phone'), data)
+            return re_data
+        if re.search(r'{load_id}', data):
+            re_data = re.sub(r'{load_id}', str(getattr(cls, 'program_id')), data)
+            return re_data
+        if re.search(r'{user_id}', data):
+            my_data = re.sub(r'{user_id}', str(hl.read_yaml('investor', 'id')), data)
+            re_data = re.sub(r'{loan_id_re}', str(getattr(cls, 'program_id')), my_data)
+            return re_data
         return data
