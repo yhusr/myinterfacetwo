@@ -24,7 +24,7 @@ class TestLogin:
     #     cls.hr.close()
     #     cls.hm.close()
     @pytest.mark.parametrize('case', cases)
-    def test_register(self, set_up, case):
+    def test_login(self, set_up, case):
         url = hy.read_yaml('request', 'base_url') + case.url
         data = HandleRe.handle_para(case.data)
         res = set_up[0].send(url=url, data=data)

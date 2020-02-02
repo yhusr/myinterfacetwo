@@ -9,12 +9,12 @@ from scripts.handle_log import my_logger
 
 
 @pytest.mark.usefixtures('set_up')
-class TestLogin:
+class TestAdd:
     obj_li = HandleExcel('add')
     cases = obj_li.read_excel()
 
     @pytest.mark.parametrize('case', cases)
-    def test_register(self, set_up, case):
+    def test_add(self, set_up, case):
         url = hy.read_yaml('request', 'base_url') + case.url
         data = HandleRe.handle_para(case.data)
         borrower_id = set_up[2].read_yaml('borrower', 'id')
