@@ -13,16 +13,6 @@ class TestRegister:
     obj_li = HandleExcel('register')
     cases = obj_li.read_excel()
 
-    # @classmethod
-    # def setUpClass(cls) -> None:
-    #     cls.hr = HandleRequests()
-    #     cls.hm = HandleMysql()
-    #     cls.hr.common_heads({hy.read_yaml('request', 'request_head'): hy.read_yaml('request', 'request_value')})
-    #
-    # @classmethod
-    # def tearDownClass(cls) -> None:
-    #     cls.hr.close()
-    #     cls.hm.close()
     @pytest.mark.parametrize('case', cases)
     def test_register(self, set_up, case):
         url = hy.read_yaml('request', 'base_url') + case.url

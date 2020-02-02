@@ -2,7 +2,6 @@
 Time:2020/2/1 0001
 """
 import pytest
-import logging
 from scripts.handle_excel import HandleExcel
 from scripts.handle_conf import hy
 from scripts.handle_re import HandleRe
