@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="3" hostname="GOS-01909081225" name="pytest" skipped="0" tests="43" time="80.293" timestamp="2020-02-01T21:12:24.055770"><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="25" name="test_register[case0]" time="1.404"><system-err>2020-02-01 21:12:27,550 - my_interface_test - [test_01_register.py--&gt;line:39] - INFO: 用例正确格式的数据注册成功断言成功
-</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="25" name="test_register[case1]" time="1.186"><system-err>2020-02-01 21:12:28,735 - my_interface_test - [test_01_register.py--&gt;line:39] - INFO: 用例密码为空断言成功
-</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="25" name="test_register[case2]" time="1.186"><system-err>2020-02-01 21:12:29,921 - my_interface_test - [test_01_register.py--&gt;line:39] - INFO: 用例密码少于8位断言成功
-</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="25" name="test_register[case3]" time="1.154"><system-err>2020-02-01 21:12:31,075 - my_interface_test - [test_01_register.py--&gt;line:39] - INFO: 用例密码大于16位断言成功
-</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="25" name="test_register[case4]" time="0.764"><system-err>2020-02-01 21:12:31,855 - my_interface_test - [test_01_register.py--&gt;line:39] - INFO: 用例手机号为空断言成功
-</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="25" name="test_register[case5]" time="0.780"><system-err>2020-02-01 21:12:32,635 - my_interface_test - [test_01_register.py--&gt;line:39] - INFO: 用例手机号密码均为空断言成功
-</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="25" name="test_register[case6]" time="0.827"><system-err>2020-02-01 21:12:33,462 - my_interface_test - [test_01_register.py--&gt;line:39] - INFO: 用例手机号输入为空格断言成功
-</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="25" name="test_register[case7]" time="2.371"><failure message="AssertionError: assert [2, &apos;无效的手机格式&apos;] == [2, &apos;密码格式为8到16位&apos;]
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="3" hostname="DESKTOP-1P6J1IS" name="pytest" skipped="0" tests="43" time="60.996" timestamp="2020-03-18T17:51:16.662640"><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="15" name="test_register[case0]" time="1.114"><system-err>2020-03-18 17:51:18,384 - my_interface_test - [test_01_register.py--&gt;line:29] - INFO: 用例正确格式的数据注册成功断言成功
+</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="15" name="test_register[case1]" time="0.712"><system-err>2020-03-18 17:51:19,133 - my_interface_test - [test_01_register.py--&gt;line:29] - INFO: 用例密码为空断言成功
+</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="15" name="test_register[case2]" time="0.759"><system-err>2020-03-18 17:51:19,889 - my_interface_test - [test_01_register.py--&gt;line:29] - INFO: 用例密码少于8位断言成功
+</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="15" name="test_register[case3]" time="0.768"><system-err>2020-03-18 17:51:20,661 - my_interface_test - [test_01_register.py--&gt;line:29] - INFO: 用例密码大于16位断言成功
+</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="15" name="test_register[case4]" time="0.434"><system-err>2020-03-18 17:51:21,089 - my_interface_test - [test_01_register.py--&gt;line:29] - INFO: 用例手机号为空断言成功
+</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="15" name="test_register[case5]" time="0.418"><system-err>2020-03-18 17:51:21,521 - my_interface_test - [test_01_register.py--&gt;line:29] - INFO: 用例手机号密码均为空断言成功
+</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="15" name="test_register[case6]" time="0.564"><system-err>2020-03-18 17:51:21,968 - my_interface_test - [test_01_register.py--&gt;line:29] - INFO: 用例手机号输入为空格断言成功
+</system-err></testcase><testcase classname="cases.test_01_register.TestRegister" file="cases\test_01_register.py" line="15" name="test_register[case7]" time="1.719"><failure message="AssertionError: assert [2, &apos;无效的手机格式&apos;] == [2, &apos;密码格式为8到16位&apos;]
   At index 1 diff: &apos;无效的手机格式&apos; != &apos;密码格式为8到16位&apos;
-  Use -v to get the full diff">self = &lt;test_01_register.TestRegister object at 0x0000000004DDB128&gt;
-set_up = (&lt;scripts.handle_request.HandleRequests object at 0x0000000004BC7D68&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x0000000004E57278&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000000004BB38D0&gt;)
-case = &lt;scripts.handle_excel.GetObj object at 0x0000000004B5EDD8&gt;
+  Use -v to get the full diff">self = &lt;test_01_register.TestRegister object at 0x000000991838DE48&gt;
+set_up = (&lt;scripts.handle_request.HandleRequests object at 0x00000099185655C0&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x00000099182D5438&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x00000099182D5128&gt;)
+case = &lt;scripts.handle_excel.GetObj object at 0x0000009917D5A400&gt;
 
     @pytest.mark.parametrize(&apos;case&apos;, cases)
     def test_register(self, set_up, case):
@@ -24,12 +24,12 @@ case = &lt;scripts.handle_excel.GetObj object at 0x0000000004B5EDD8&gt;
             self.obj_li.write_excel(int(case.caseId)+1,7, value=&apos;fail&apos;)
 &gt;           raise e
 
-cases\test_01_register.py:37: 
+cases\test_01_register.py:27: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-self = &lt;test_01_register.TestRegister object at 0x0000000004DDB128&gt;
-set_up = (&lt;scripts.handle_request.HandleRequests object at 0x0000000004BC7D68&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x0000000004E57278&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000000004BB38D0&gt;)
-case = &lt;scripts.handle_excel.GetObj object at 0x0000000004B5EDD8&gt;
+self = &lt;test_01_register.TestRegister object at 0x000000991838DE48&gt;
+set_up = (&lt;scripts.handle_request.HandleRequests object at 0x00000099185655C0&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x00000099182D5438&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x00000099182D5128&gt;)
+case = &lt;scripts.handle_excel.GetObj object at 0x0000009917D5A400&gt;
 
     @pytest.mark.parametrize(&apos;case&apos;, cases)
     def test_register(self, set_up, case):
@@ -42,35 +42,35 @@ E           AssertionError: assert [2, &apos;无效的手机格式&apos;] == [2,
 E             At index 1 diff: &apos;无效的手机格式&apos; != &apos;密码格式为8到16位&apos;
 E             Use -v to get the full diff
 
-cases\test_01_register.py:32: AssertionError</failure><system-err>2020-02-01 21:12:34,133 - my_interface_test - [test_01_register.py--&gt;line:35] - ERROR: 用例手机号和密码均输入为空格断言失败
-2020-02-01 21:12:40,139 - my_interface_test - [test_01_register.py--&gt;line:35] - ERROR: 用例手机号和密码均输入为空格断言失败
-2020-02-01 21:12:46,005 - my_interface_test - [test_01_register.py--&gt;line:35] - ERROR: 用例手机号和密码均输入为空格断言失败
-</system-err></testcase><testcase classname="cases.test_02_login.TestLogin" file="cases\test_02_login.py" line="26" name="test_register[case0]" time="1.108"><system-err>2020-02-01 21:12:47,128 - my_interface_test - [test_02_login.py--&gt;line:40] - INFO: 用例手机密码均为空断言成功
-</system-err></testcase><testcase classname="cases.test_02_login.TestLogin" file="cases\test_02_login.py" line="26" name="test_register[case1]" time="0.811"><system-err>2020-02-01 21:12:47,955 - my_interface_test - [test_02_login.py--&gt;line:40] - INFO: 用例手机密码正常输入断言成功
-</system-err></testcase><testcase classname="cases.test_02_login.TestLogin" file="cases\test_02_login.py" line="26" name="test_register[case2]" time="0.796"><system-err>2020-02-01 21:12:48,750 - my_interface_test - [test_02_login.py--&gt;line:40] - INFO: 用例密码为空断言成功
-</system-err></testcase><testcase classname="cases.test_02_login.TestLogin" file="cases\test_02_login.py" line="26" name="test_register[case3]" time="0.780"><system-err>2020-02-01 21:12:49,530 - my_interface_test - [test_02_login.py--&gt;line:40] - INFO: 用例手机号少于8位断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case0]" time="1.108"><system-err>2020-02-01 21:12:50,638 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例不登录充值断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case1]" time="0.796"><system-err>2020-02-01 21:12:51,433 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例投资人登录成功断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case2]" time="1.076"><system-err>2020-02-01 21:12:52,525 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例正常输入投资信息断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case3]" time="0.874"><system-err>2020-02-01 21:12:53,321 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例投资人id为空断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case4]" time="0.780"><system-err>2020-02-01 21:12:54,179 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例投资人id为空格断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case5]" time="0.811"><system-err>2020-02-01 21:12:54,975 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例投资数量为负数断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case6]" time="0.796"><system-err>2020-02-01 21:12:55,786 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例投资数量为小数断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case7]" time="0.796"><system-err>2020-02-01 21:12:56,597 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例投资数量为非字数断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case8]" time="0.796"><system-err>2020-02-01 21:12:57,393 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例投资数量为空断言成功
-</system-err></testcase><testcase classname="cases.test_03_recharge.TestLogin" file="cases\test_03_recharge.py" line="27" name="test_register[case9]" time="0.827"><system-err>2020-02-01 21:12:58,204 - my_interface_test - [test_03_recharge.py--&gt;line:54] - INFO: 用例投资数量为0断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case0]" time="1.342"><system-err>2020-02-01 21:12:59,561 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例未登录增加项目断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case1]" time="1.045"><system-err>2020-02-01 21:13:00,622 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例借款人登录成功断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case2]" time="1.092"><system-err>2020-02-01 21:13:01,714 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例添加项目成功断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case3]" time="1.045"><system-err>2020-02-01 21:13:02,759 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例用户id为空断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case4]" time="3.448"><failure message="AssertionError: assert [1007, &apos;无权限访问，请检查参数&apos;] == [2, &apos;会员不存在&apos;]
+cases\test_01_register.py:22: AssertionError</failure><system-err>2020-03-18 17:51:22,437 - my_interface_test - [test_01_register.py--&gt;line:25] - ERROR: 用例手机号和密码均输入为空格断言失败
+2020-03-18 17:51:28,155 - my_interface_test - [test_01_register.py--&gt;line:25] - ERROR: 用例手机号和密码均输入为空格断言失败
+2020-03-18 17:51:33,837 - my_interface_test - [test_01_register.py--&gt;line:25] - ERROR: 用例手机号和密码均输入为空格断言失败
+</system-err></testcase><testcase classname="cases.test_02_login.TestLogin" file="cases\test_02_login.py" line="25" name="test_login[case0]" time="0.732"><system-err>2020-03-18 17:51:34,615 - my_interface_test - [test_02_login.py--&gt;line:39] - INFO: 用例手机密码均为空断言成功
+</system-err></testcase><testcase classname="cases.test_02_login.TestLogin" file="cases\test_02_login.py" line="25" name="test_login[case1]" time="0.453"><system-err>2020-03-18 17:51:35,068 - my_interface_test - [test_02_login.py--&gt;line:39] - INFO: 用例手机密码正常输入断言成功
+</system-err></testcase><testcase classname="cases.test_02_login.TestLogin" file="cases\test_02_login.py" line="25" name="test_login[case2]" time="0.454"><system-err>2020-03-18 17:51:35,543 - my_interface_test - [test_02_login.py--&gt;line:39] - INFO: 用例密码为空断言成功
+</system-err></testcase><testcase classname="cases.test_02_login.TestLogin" file="cases\test_02_login.py" line="25" name="test_login[case3]" time="0.438"><system-err>2020-03-18 17:51:35,975 - my_interface_test - [test_02_login.py--&gt;line:39] - INFO: 用例手机号少于8位断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case0]" time="0.781"><system-err>2020-03-18 17:51:36,741 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例不登录充值断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case1]" time="0.464"><system-err>2020-03-18 17:51:37,227 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例投资人登录成功断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case2]" time="0.953"><system-err>2020-03-18 17:51:38,127 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例正常输入投资信息断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case3]" time="0.469"><system-err>2020-03-18 17:51:38,627 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例投资人id为空断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case4]" time="0.469"><system-err>2020-03-18 17:51:39,080 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例投资人id为空格断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case5]" time="0.438"><system-err>2020-03-18 17:51:39,549 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例投资数量为负数断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case6]" time="0.469"><system-err>2020-03-18 17:51:40,018 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例投资数量为小数断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case7]" time="0.422"><system-err>2020-03-18 17:51:40,439 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例投资数量为非字数断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case8]" time="0.453"><system-err>2020-03-18 17:51:40,893 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例投资数量为空断言成功
+</system-err></testcase><testcase classname="cases.test_03_recharge.TestRecharge" file="cases\test_03_recharge.py" line="26" name="test_recharge[case9]" time="0.484"><system-err>2020-03-18 17:51:41,361 - my_interface_test - [test_03_recharge.py--&gt;line:53] - INFO: 用例投资数量为0断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case0]" time="0.938"><system-err>2020-03-18 17:51:42,299 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例未登录增加项目断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case1]" time="0.703"><system-err>2020-03-18 17:51:43,018 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例借款人登录成功断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case2]" time="0.688"><system-err>2020-03-18 17:51:43,705 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例添加项目成功断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case3]" time="0.672"><system-err>2020-03-18 17:51:44,372 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例用户id为空断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case4]" time="2.356"><failure message="AssertionError: assert [1007, &apos;无权限访问，请检查参数&apos;] == [2, &apos;会员不存在&apos;]
   At index 0 diff: 1007 != 2
-  Use -v to get the full diff">self = &lt;test_04_add.TestLogin object at 0x0000000005123588&gt;
-set_up = (&lt;scripts.handle_request.HandleRequests object at 0x0000000004CC1D30&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x0000000004F7CF60&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000000004E9C198&gt;)
-case = &lt;scripts.handle_excel.GetObj object at 0x0000000004D0D470&gt;
+  Use -v to get the full diff">self = &lt;test_04_add.TestAdd object at 0x0000009918261DA0&gt;
+set_up = (&lt;scripts.handle_request.HandleRequests object at 0x0000009917E12D68&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x0000009917E1AE80&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000009916E97208&gt;)
+case = &lt;scripts.handle_excel.GetObj object at 0x0000009917E9CA58&gt;
 
     @pytest.mark.parametrize(&apos;case&apos;, cases)
-    def test_register(self, set_up, case):
+    def test_add(self, set_up, case):
         url = hy.read_yaml(&apos;request&apos;, &apos;base_url&apos;) + case.url
         data = HandleRe.handle_para(case.data)
         borrower_id = set_up[2].read_yaml(&apos;borrower&apos;, &apos;id&apos;)
@@ -96,15 +96,15 @@ case = &lt;scripts.handle_excel.GetObj object at 0x0000000004D0D470&gt;
             self.obj_li.write_excel(int(case.caseId) + 1, 7, value=&apos;fail&apos;)
 &gt;           raise e
 
-cases\test_04_add.py:42: 
+cases\test_04_add.py:41: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-self = &lt;test_04_add.TestLogin object at 0x0000000005123588&gt;
-set_up = (&lt;scripts.handle_request.HandleRequests object at 0x0000000004CC1D30&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x0000000004F7CF60&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000000004E9C198&gt;)
-case = &lt;scripts.handle_excel.GetObj object at 0x0000000004D0D470&gt;
+self = &lt;test_04_add.TestAdd object at 0x0000009918261DA0&gt;
+set_up = (&lt;scripts.handle_request.HandleRequests object at 0x0000009917E12D68&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x0000009917E1AE80&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000009916E97208&gt;)
+case = &lt;scripts.handle_excel.GetObj object at 0x0000009917E9CA58&gt;
 
     @pytest.mark.parametrize(&apos;case&apos;, cases)
-    def test_register(self, set_up, case):
+    def test_add(self, set_up, case):
         url = hy.read_yaml(&apos;request&apos;, &apos;base_url&apos;) + case.url
         data = HandleRe.handle_para(case.data)
         borrower_id = set_up[2].read_yaml(&apos;borrower&apos;, &apos;id&apos;)
@@ -129,32 +129,32 @@ E           AssertionError: assert [1007, &apos;无权限访问，请检查参�
 E             At index 0 diff: 1007 != 2
 E             Use -v to get the full diff
 
-cases\test_04_add.py:38: AssertionError</failure><system-err>2020-02-01 21:13:03,913 - my_interface_test - [test_04_add.py--&gt;line:40] - ERROR: 用例未注册的用户id断言失败
-2020-02-01 21:13:10,122 - my_interface_test - [test_04_add.py--&gt;line:40] - ERROR: 用例未注册的用户id断言失败
-2020-02-01 21:13:16,253 - my_interface_test - [test_04_add.py--&gt;line:40] - ERROR: 用例未注册的用户id断言失败
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case5]" time="1.576"><system-err>2020-02-01 21:13:17,860 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例标题为空断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case6]" time="1.030"><system-err>2020-02-01 21:13:18,889 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例借款数量为0断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case7]" time="1.030"><system-err>2020-02-01 21:13:19,919 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例借款数量为负数断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case8]" time="1.030"><system-err>2020-02-01 21:13:20,949 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例借款期限为负数断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case9]" time="1.061"><system-err>2020-02-01 21:13:22,025 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例借款期限小于1个月断言成功
-</system-err></testcase><testcase classname="cases.test_04_add.TestLogin" file="cases\test_04_add.py" line="16" name="test_register[case10]" time="1.030"><system-err>2020-02-01 21:13:23,055 - my_interface_test - [test_04_add.py--&gt;line:44] - INFO: 用例借款期限大于36个月断言成功
-</system-err></testcase><testcase classname="cases.test_05_verify.TestLogin" file="cases\test_05_verify.py" line="26" name="test_register[case0]" time="1.139"><system-err>2020-02-01 21:13:24,193 - my_interface_test - [test_05_verify.py--&gt;line:43] - INFO: 用例管理员登录断言成功
-</system-err></testcase><testcase classname="cases.test_05_verify.TestLogin" file="cases\test_05_verify.py" line="26" name="test_register[case1]" time="0.811"><system-err>2020-02-01 21:13:25,005 - my_interface_test - [test_05_verify.py--&gt;line:43] - INFO: 用例管理员审核断言成功
-</system-err></testcase><testcase classname="cases.test_06_invest.TestLogin" file="cases\test_06_invest.py" line="16" name="test_register[case0]" time="1.170"><system-err>2020-02-01 21:13:26,128 - my_interface_test - [test_06_invest.py--&gt;line:33] - INFO: 用例未登录进行投资断言成功
-</system-err></testcase><testcase classname="cases.test_06_invest.TestLogin" file="cases\test_06_invest.py" line="16" name="test_register[case1]" time="0.827"><system-err>2020-02-01 21:13:27,017 - my_interface_test - [test_06_invest.py--&gt;line:33] - INFO: 用例投资人登录断言成功
-</system-err></testcase><testcase classname="cases.test_06_invest.TestLogin" file="cases\test_06_invest.py" line="16" name="test_register[case2]" time="0.811"><system-err>2020-02-01 21:13:27,844 - my_interface_test - [test_06_invest.py--&gt;line:33] - INFO: 用例投资成功断言成功
-</system-err></testcase><testcase classname="cases.test_06_invest.TestLogin" file="cases\test_06_invest.py" line="16" name="test_register[case3]" time="0.796"><system-err>2020-02-01 21:13:28,639 - my_interface_test - [test_06_invest.py--&gt;line:33] - INFO: 用例投资金额带小数断言成功
-</system-err></testcase><testcase classname="cases.test_06_invest.TestLogin" file="cases\test_06_invest.py" line="16" name="test_register[case4]" time="0.796"><system-err>2020-02-01 21:13:29,435 - my_interface_test - [test_06_invest.py--&gt;line:33] - INFO: 用例投资金额为负数断言成功
-</system-err></testcase><testcase classname="cases.test_06_invest.TestLogin" file="cases\test_06_invest.py" line="16" name="test_register[case5]" time="0.796"><system-err>2020-02-01 21:13:30,246 - my_interface_test - [test_06_invest.py--&gt;line:33] - INFO: 用例投资金额个位不为0断言成功
-</system-err></testcase><testcase classname="cases.test_06_invest.TestLogin" file="cases\test_06_invest.py" line="16" name="test_register[case6]" time="0.796"><system-err>2020-02-01 21:13:31,057 - my_interface_test - [test_06_invest.py--&gt;line:33] - INFO: 用例投资金额十位不为0断言成功
-</system-err></testcase><testcase classname="cases.test_06_invest.TestLogin" file="cases\test_06_invest.py" line="16" name="test_register[case7]" time="3.011"><failure message="AssertionError: assert [2, &apos;该项目不在竞标中状态&apos;] == [1003, &apos;未授权或token已过期&apos;]
+cases\test_04_add.py:37: AssertionError</failure><system-err>2020-03-18 17:51:45,126 - my_interface_test - [test_04_add.py--&gt;line:39] - ERROR: 用例未注册的用户id断言失败
+2020-03-18 17:51:50,939 - my_interface_test - [test_04_add.py--&gt;line:39] - ERROR: 用例未注册的用户id断言失败
+2020-03-18 17:51:56,753 - my_interface_test - [test_04_add.py--&gt;line:39] - ERROR: 用例未注册的用户id断言失败
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case5]" time="0.672"><system-err>2020-03-18 17:51:57,425 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例标题为空断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case6]" time="0.672"><system-err>2020-03-18 17:51:58,112 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例借款数量为0断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case7]" time="0.676"><system-err>2020-03-18 17:51:58,798 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例借款数量为负数断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case8]" time="0.660"><system-err>2020-03-18 17:51:59,465 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例借款期限为负数断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case9]" time="0.704"><system-err>2020-03-18 17:52:00,153 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例借款期限小于1个月断言成功
+</system-err></testcase><testcase classname="cases.test_04_add.TestAdd" file="cases\test_04_add.py" line="15" name="test_add[case10]" time="0.679"><system-err>2020-03-18 17:52:00,842 - my_interface_test - [test_04_add.py--&gt;line:43] - INFO: 用例借款期限大于36个月断言成功
+</system-err></testcase><testcase classname="cases.test_05_verify.TestVerify" file="cases\test_05_verify.py" line="25" name="test_verify[case0]" time="0.777"><system-err>2020-03-18 17:52:01,619 - my_interface_test - [test_05_verify.py--&gt;line:42] - INFO: 用例管理员登录断言成功
+</system-err></testcase><testcase classname="cases.test_05_verify.TestVerify" file="cases\test_05_verify.py" line="25" name="test_verify[case1]" time="0.448"><system-err>2020-03-18 17:52:02,074 - my_interface_test - [test_05_verify.py--&gt;line:42] - INFO: 用例管理员审核断言成功
+</system-err></testcase><testcase classname="cases.test_06_invest.TestInvest" file="cases\test_06_invest.py" line="15" name="test_invest[case0]" time="0.724"><system-err>2020-03-18 17:52:02,798 - my_interface_test - [test_06_invest.py--&gt;line:32] - INFO: 用例未登录进行投资断言成功
+</system-err></testcase><testcase classname="cases.test_06_invest.TestInvest" file="cases\test_06_invest.py" line="15" name="test_invest[case1]" time="0.500"><system-err>2020-03-18 17:52:03,267 - my_interface_test - [test_06_invest.py--&gt;line:32] - INFO: 用例投资人登录断言成功
+</system-err></testcase><testcase classname="cases.test_06_invest.TestInvest" file="cases\test_06_invest.py" line="15" name="test_invest[case2]" time="0.453"><system-err>2020-03-18 17:52:03,751 - my_interface_test - [test_06_invest.py--&gt;line:32] - INFO: 用例投资成功断言成功
+</system-err></testcase><testcase classname="cases.test_06_invest.TestInvest" file="cases\test_06_invest.py" line="15" name="test_invest[case3]" time="0.438"><system-err>2020-03-18 17:52:04,205 - my_interface_test - [test_06_invest.py--&gt;line:32] - INFO: 用例投资金额带小数断言成功
+</system-err></testcase><testcase classname="cases.test_06_invest.TestInvest" file="cases\test_06_invest.py" line="15" name="test_invest[case4]" time="0.438"><system-err>2020-03-18 17:52:04,645 - my_interface_test - [test_06_invest.py--&gt;line:32] - INFO: 用例投资金额为负数断言成功
+</system-err></testcase><testcase classname="cases.test_06_invest.TestInvest" file="cases\test_06_invest.py" line="15" name="test_invest[case5]" time="0.453"><system-err>2020-03-18 17:52:05,096 - my_interface_test - [test_06_invest.py--&gt;line:32] - INFO: 用例投资金额个位不为0断言成功
+</system-err></testcase><testcase classname="cases.test_06_invest.TestInvest" file="cases\test_06_invest.py" line="15" name="test_invest[case6]" time="0.453"><system-err>2020-03-18 17:52:05,549 - my_interface_test - [test_06_invest.py--&gt;line:32] - INFO: 用例投资金额十位不为0断言成功
+</system-err></testcase><testcase classname="cases.test_06_invest.TestInvest" file="cases\test_06_invest.py" line="15" name="test_invest[case7]" time="2.016"><failure message="AssertionError: assert [2, &apos;该项目不在竞标中状态&apos;] == [1003, &apos;未授权或token已过期&apos;]
   At index 0 diff: 2 != 1003
-  Use -v to get the full diff">self = &lt;test_06_invest.TestLogin object at 0x0000000005416668&gt;
-set_up = (&lt;scripts.handle_request.HandleRequests object at 0x00000000050C2B38&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x00000000053C6908&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000000004D8F978&gt;)
-case = &lt;scripts.handle_excel.GetObj object at 0x0000000004D90320&gt;
+  Use -v to get the full diff">self = &lt;test_06_invest.TestInvest object at 0x00000099184A8470&gt;
+set_up = (&lt;scripts.handle_request.HandleRequests object at 0x00000099184A87B8&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x00000099182B1908&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000009918543EB8&gt;)
+case = &lt;scripts.handle_excel.GetObj object at 0x0000009917F5EB00&gt;
 
     @pytest.mark.parametrize(&apos;case&apos;, cases)
-    def test_register(self, set_up, case):
+    def test_invest(self, set_up, case):
         url = hy.read_yaml(&apos;request&apos;, &apos;base_url&apos;) + case.url
         data = HandleRe.handle_para(case.data)
         res = set_up[0].send(url=url, data=data)
@@ -169,15 +169,15 @@ case = &lt;scripts.handle_excel.GetObj object at 0x0000000004D90320&gt;
             self.obj_li.write_excel(int(case.caseId) + 1, 7, value=&apos;fail&apos;)
 &gt;           raise e
 
-cases\test_06_invest.py:31: 
+cases\test_06_invest.py:30: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-self = &lt;test_06_invest.TestLogin object at 0x0000000005416668&gt;
-set_up = (&lt;scripts.handle_request.HandleRequests object at 0x00000000050C2B38&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x00000000053C6908&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000000004D8F978&gt;)
-case = &lt;scripts.handle_excel.GetObj object at 0x0000000004D90320&gt;
+self = &lt;test_06_invest.TestInvest object at 0x00000099184A8470&gt;
+set_up = (&lt;scripts.handle_request.HandleRequests object at 0x00000099184A87B8&gt;, &lt;scripts.handle_mysql.HandleMysql object at 0x00000099182B1908&gt;, &lt;scripts.handle_conf.HandleYaml object at 0x0000009918543EB8&gt;)
+case = &lt;scripts.handle_excel.GetObj object at 0x0000009917F5EB00&gt;
 
     @pytest.mark.parametrize(&apos;case&apos;, cases)
-    def test_register(self, set_up, case):
+    def test_invest(self, set_up, case):
         url = hy.read_yaml(&apos;request&apos;, &apos;base_url&apos;) + case.url
         data = HandleRe.handle_para(case.data)
         res = set_up[0].send(url=url, data=data)
@@ -191,7 +191,7 @@ E           AssertionError: assert [2, &apos;该项目不在竞标中状态&apos
 E             At index 0 diff: 2 != 1003
 E             Use -v to get the full diff
 
-cases\test_06_invest.py:27: AssertionError</failure><system-err>2020-02-01 21:13:31,837 - my_interface_test - [test_06_invest.py--&gt;line:29] - ERROR: 用例投资金额大于剩余金额断言失败
-2020-02-01 21:13:37,953 - my_interface_test - [test_06_invest.py--&gt;line:29] - ERROR: 用例投资金额大于剩余金额断言失败
-2020-02-01 21:13:44,083 - my_interface_test - [test_06_invest.py--&gt;line:29] - ERROR: 用例投资金额大于剩余金额断言失败
+cases\test_06_invest.py:26: AssertionError</failure><system-err>2020-03-18 17:52:06,018 - my_interface_test - [test_06_invest.py--&gt;line:28] - ERROR: 用例投资金额大于剩余金额断言失败
+2020-03-18 17:52:11,815 - my_interface_test - [test_06_invest.py--&gt;line:28] - ERROR: 用例投资金额大于剩余金额断言失败
+2020-03-18 17:52:17,580 - my_interface_test - [test_06_invest.py--&gt;line:28] - ERROR: 用例投资金额大于剩余金额断言失败
 </system-err></testcase></testsuite></testsuites>
