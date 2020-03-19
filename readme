@@ -2,4 +2,4 @@ pytest.ini中对用例函数进行标记
 @pytest.mark.mytest
 执行的时候使用这些标记即可进行指定的用例进行
 如下：
-pytest.main("-m=mytest")
+pytest.main("-m, "mytest")
