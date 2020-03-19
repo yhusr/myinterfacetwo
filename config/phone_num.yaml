@@ -1,18 +1,18 @@
-investor:
-  id: 7796533
-  mobile_phone: '15873056824'
-  pwd: '12345678'
-  reg_name: investor
-  type: 1
-borrower:
-  id: 7796534
-  mobile_phone: '15817089345'
-  pwd: '12345678'
-  reg_name: borrower
-  type: 1
 admin:
-  id: 7796535
-  mobile_phone: '15882413067'
+  id: 7797208
+  mobile_phone: '15893817452'
   pwd: '12345678'
   reg_name: admin
   type: 0
+borrower:
+  id: 7797207
+  mobile_phone: '15889152374'
+  pwd: '12345678'
+  reg_name: borrower
+  type: 1
+investor:
+  id: 7797206
+  mobile_phone: '15814065327'
+  pwd: '12345678'
+  reg_name: investor
+  type: 1

@@ -20,7 +20,7 @@ class HandlePhone:
                  "pwd": password,
                  "type": type,
                  "reg_name": username}
-        res = hr.send(url=url,data=datas)
+        res = hr.send(url=url, data=datas)
 
         if res.json()['code'] == 0:
             id = res.json()['data']['id']
@@ -39,11 +39,12 @@ class HandlePhone:
     def phone_yaml(cls):
         my_yaml = HandleYaml(PHONE_PATH)
         investor_data = cls.get_phone_nums('investor')
-        my_yaml.write_yaml(investor_data)
         borrower_data = cls.get_phone_nums('borrower')
-        my_yaml.write_yaml(borrower_data)
+        borrower_data.update(investor_data)
         admin_data = cls.get_phone_nums('admin', type=0)
-        my_yaml.write_yaml(admin_data)
+        admin_data.update(borrower_data)
+        my_yaml.write_phone_yaml(admin_data)
+
 
 if __name__ == '__main__':
     HandlePhone.phone_yaml()

@@ -6,6 +6,7 @@ from scripts.handle_excel import HandleExcel
 from scripts.handle_conf import hy
 from scripts.handle_re import HandleRe
 from scripts.handle_log import my_logger
+from scripts.handle_phone import HandlePhone
 
 
 @pytest.mark.usefixtures('set_up')
@@ -26,6 +27,8 @@ class TestLogin:
     @pytest.mark.parametrize('case', cases)
     def test_login(self, set_up, case):
         url = hy.read_yaml('request', 'base_url') + case.url
+        if case.caseId == 2:
+            HandlePhone.phone_yaml()
         data = HandleRe.handle_para(case.data)
         res = set_up[0].send(url=url, data=data)
         try:
