@@ -55,7 +55,7 @@ class HandleConfig:
         for data in datas:
             self.my_config[data] = datas[data]
         with open(self.filepath, 'a', encoding='utf8') as f:
-            f.write(datas)
+            self.my_config.write(f)
 
 
 hc = HandleConfig()
