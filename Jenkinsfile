@@ -7,11 +7,13 @@ pipeline {
       }
     }
 
-    stage('Results') {
-      steps{
-        [allure ./reports/* ]
-      }
-    }
+    post {
+        always{
+                script {
+                    allure includeProperties: false, jdk: '', report: 'report', results: [[path: 'reports/*.xml']] 
+                }
+            }
+        }
   }
   environment {
     allure = '/data/allure-2.13.9/bin'
