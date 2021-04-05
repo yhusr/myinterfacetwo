@@ -8,7 +8,9 @@ pipeline {
     }
 
     stage('Results') {
+      steps{
         allure '**/reports/*.xml'
+      }
     }
   }
   environment {
