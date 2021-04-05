@@ -9,7 +9,7 @@ pipeline {
 
     stage('Results') {
       steps{
-        [allure reports/*.xml]
+        [allure reports/allure.xml]
       }
     }
   }
