@@ -8,13 +8,11 @@ pipeline {
     }
     stage('report') {
       steps{
-        post {
             always{
                     script {
                         allure includeProperties: false, jdk: '', report: 'report', results: [[path: 'reports/*.xml']] 
                     }
                 }
-            }
         }
     }
   }
