@@ -9,13 +9,7 @@ pipeline {
 
     stage('report') {
       steps {
-        always() {
-          script {
-            allure includeProperties: false, jdk: '', report: 'report', results: [[path: 'reports/*.xml']]
-          }
-
-        }
-
+        sh 'allure generate reports/'
       }
     }
 
