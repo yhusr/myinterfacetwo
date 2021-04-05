@@ -7,12 +7,9 @@ pipeline {
       }
     }
 
-    stage('生成测试报告') {
-      steps {
-        allure(commandline: 'allure', results: [[path: 'reports']])
-      }
+    stage('Results') {
+        allure '**/reports/*.xml'
     }
-
   }
   environment {
     allure = '/data/allure-2.13.9/bin'
