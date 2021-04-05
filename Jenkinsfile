@@ -6,7 +6,7 @@ pipeline {
         sh 'python run.py'
       }
     }
-
+    stage('report') {
     post {
         always{
                 script {
@@ -14,6 +14,7 @@ pipeline {
                 }
             }
         }
+    }
   }
   environment {
     allure = '/data/allure-2.13.9/bin'
