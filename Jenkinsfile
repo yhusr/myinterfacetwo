@@ -9,7 +9,7 @@ pipeline {
 
     stage('Results') {
       steps{
-        [allure ./reports/*, config=/data/allure-2.13.9/config]
+        [allure ./reports/* config=/data/allure-2.13.9/config]
       }
     }
   }
