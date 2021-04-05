@@ -9,7 +9,7 @@ pipeline {
 
     stage('report') {
       steps {
-        sh 'allure generate -c reports/ -o reports/'
+        sh 'allure generate -c reports/ -o reports/html'
       }
     }
 
